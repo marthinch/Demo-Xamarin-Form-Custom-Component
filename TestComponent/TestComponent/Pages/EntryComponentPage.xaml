@@ -4,7 +4,7 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:components="clr-namespace:CustomComponent.Components;assembly=CustomComponent">
-    <ContentPage.Content>
+    <ScrollView>
         <StackLayout>
             <components:DefaultEntry
                 Title="This is a title for default entry"
@@ -81,5 +81,5 @@
                 ShowHint="True" />
 
         </StackLayout>
-    </ContentPage.Content>
+    </ScrollView>
 </ContentPage>
