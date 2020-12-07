@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="TestComponent.Pages.SwitchComponentPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:components="clr-namespace:CustomComponent.Components;assembly=CustomComponent">
+    <ContentPage.Content>
+        <StackLayout>
+            <components:DefaultSwitch
+                Title="Title for left switch"
+                Margin="10"
+                HintText="This is hint text for left switch"
+                ShowHint="True"
+                Text="This is left switch" />
+
+            <components:DefaultSwitch
+                Title="Title for right switch"
+                Margin="10"
+                HintText="This is hint text for right switch"
+                IsLeftSwitch="False"
+                ShowHint="True"
+                Text="This is right switch" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

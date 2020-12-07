@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="TestComponent.Pages.EntryComponentPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:components="clr-namespace:CustomComponent.Components;assembly=CustomComponent">
+    <ContentPage.Content>
+        <StackLayout>
+            <components:DefaultEntry
+                Title="This is a title for default entry"
+                Margin="10"
+                IsRequired="True"
+                MaxLength="255"
+                ShowHint="False"
+                Text="This is a typed text for default entry" />
+
+            <components:DefaultEntry
+                Title="This is a title for default entry (required)"
+                Margin="10"
+                HintText="This is hint text for default entry (required)"
+                IsRequired="True"
+                MaxLength="255"
+                MinLength="1"
+                ShowHint="True" />
+
+            <components:DefaultEntry
+                Title="This is a title for default entry with hint text"
+                Margin="10"
+                HintText="This is hint text for default entry with hint text"
+                IsRequired="True"
+                MaxLength="255"
+                ShowHint="True"
+                Text="This is a typed text for default entry with hint text" />
+
+            <components:CounterEntry
+                Title="This is a title for text counter entry"
+                Margin="10"
+                HintText="This is hint text for text counter entry"
+                IsRequired="True"
+                MaxLength="255"
+                ShowHint="True"
+                Text="This is a typed text for text counter entry" />
+
+            <components:NumberEntry
+                Title="This is a title for numeric entry"
+                Margin="10"
+                HintText="This is hint text for numeric entry"
+                IsRequired="False"
+                Number="10"
+                ShowHint="True" />
+
+            <components:NumberEntry
+                Title="This is a title for numeric entry (required)"
+                Margin="10"
+                HintText="This is hint text for numeric entry (required)"
+                IsRequired="True"
+                Number=""
+                ShowHint="True" />
+
+            <components:NumberEntry
+                Title="This is a title for numeric entry with 3 decimal point"
+                Margin="10"
+                DecimalPoint="3"
+                HintText="This is hint text for numeric entry with 3 decimal point"
+                Number="123.456"
+                ShowHint="True" />
+
+            <components:PriceEntry
+                Title="This is a title for price entry"
+                Margin="10"
+                HintText="This is hint text for price entry"
+                Price="1000"
+                ShowHint="True" />
+
+            <components:PriceEntry
+                Title="This is a title for price entry with cent"
+                Margin="10"
+                HintText="This is hint text for price entry with cent"
+                IsUsingCent="True"
+                Price="1000"
+                ShowHint="True" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

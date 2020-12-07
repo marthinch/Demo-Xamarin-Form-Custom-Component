@@ -14,5 +14,27 @@
     <PackageReference Include="Xamarin.Forms" Version="4.8.0.1451" />
     <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
     <PackageReference Include="XamarinFormCustomComponent" Version="1.0.0" />
+    <PackageReference Include="XamarinFormEmptyStatePage" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Pages\EmptyStatePage.xaml.cs">
+      <DependentUpon>EmptyStatePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\EntryComponentPage.xaml.cs">
+      <DependentUpon>EntryComponentPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Pages\EntryComponentPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Pages\EmptyStatePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Pages\SwitchComponentPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>
