@@ -18,8 +18,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Pages\EmptyStatePage.xaml.cs">
-      <DependentUpon>EmptyStatePage.xaml</DependentUpon>
+    <Compile Update="Pages\CustomEmptyStatePage.xaml.cs">
+      <DependentUpon>CustomEmptyStatePage.xaml</DependentUpon>
     </Compile>
     <Compile Update="Pages\EntryComponentPage.xaml.cs">
       <DependentUpon>EntryComponentPage.xaml</DependentUpon>
@@ -27,10 +27,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="Pages\DefaultEmptyStatePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Pages\EntryComponentPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Pages\EmptyStatePage.xaml">
+    <EmbeddedResource Update="Pages\CustomEmptyStatePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Pages\SwitchComponentPage.xaml">

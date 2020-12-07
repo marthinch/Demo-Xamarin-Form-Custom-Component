@@ -21,9 +21,14 @@ namespace TestComponent
             await Navigation.PushAsync(new SwitchComponentPage());
         }
 
-        private async void ButtonEmptyPage_Clicked(object sender, EventArgs e)
+        private async void ButtonDefaultEmptyPage_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new EmptyStatePage());
+            await Navigation.PushAsync(new DefaultEmptyStatePage());
+        }
+
+        private async void ButtonCustomEmptyPage_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new CustomEmptyStatePage());
         }
     }
 }

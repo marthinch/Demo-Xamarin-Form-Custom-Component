@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace TestComponent.Pages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class EmptyStatePage : ContentPage
+    public partial class CustomEmptyStatePage : ContentPage
     {
-        public EmptyStatePage()
+        public CustomEmptyStatePage()
         {
             InitializeComponent();
 

@@ -23,9 +23,14 @@
                 Text="Switch Component" />
 
             <Button
-                x:Name="ButtonEmptyPage"
-                Clicked="ButtonEmptyPage_Clicked"
-                Text="Empty State Page" />
+                x:Name="ButtonDefaultEmptyPage"
+                Clicked="ButtonDefaultEmptyPage_Clicked"
+                Text="Default Empty State Page" />
+
+            <Button
+                x:Name="ButtonCustomEmptyPage"
+                Clicked="ButtonCustomEmptyPage_Clicked"
+                Text="Custom Empty State Page" />
 
         </StackLayout>
     </ScrollView>

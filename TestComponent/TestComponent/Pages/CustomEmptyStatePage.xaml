@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="TestComponent.Pages.CustomEmptyStatePage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:pages="clr-namespace:EmptyPage.Pages;assembly=EmptyPage">
+
+    <StackLayout>
+        <pages:EmptyView
+            ButtonActionCommand="{Binding RetryCommand}"
+            HorizontalOptions="CenterAndExpand"
+            ImageActionCommand="{Binding ImageRetryCommand}"
+            ImageHeight="300"
+            ImageSource="https://banner2.cleanpng.com/20180524/qxt/kisspng-computer-icons-clip-art-retry-5b071ac2cee532.0199574015271922588475.jpg"
+            ImageWidth="300"
+            ShowRetryButton="True"
+            ShowText="True"
+            Text="Kosong nih? Ketuk gambar untuk coba kembali"
+            VerticalOptions="CenterAndExpand" />
+    </StackLayout>
+
+</ContentPage>
